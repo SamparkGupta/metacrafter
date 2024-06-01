@@ -1,0 +1,38 @@
+/* 
+// Metacrafters - Beginning Javascript
+//
+// This is a javascript playground for testing your javascript code!
+// When you are ready to test, simply right click and select "Run Code"
+// to see the result print below. If you have more then one snippet of code,
+// you can highlight the code you want to test, and then right click and select "Run Code"
+*/
+
+// Enter your code below this line
+const nft=[]
+function mintNFT (_name,_age,_eyecolor,_gender){
+    const meta_nft={
+        "name":_name,
+        "age":_age,
+        "eyecolor":_eyecolor,
+        "gender":_gender
+    }
+    nft.push(meta_nft);
+}
+function listNFTs(){
+    for(let i=0;i<nft.length;i++){
+        console.log("index:"+(i+1));
+        console.log("name:"+nft[i].name);
+        console.log("age:"+nft[i].age);
+        console.log("eyecolor:"+nft[i].eyecolor);
+        console.log("gender:"+nft[i].gender);
+        console.log("-----------------------");
+       
+    }
+}
+function getTOTALSUPPLY(){
+    console.log(nft.length)
+}
+mintNFT("sam",20,"black","male")
+mintNFT("harsh",21,"black","others")
+ listNFTs();
+ getTOTALSUPPLY();
